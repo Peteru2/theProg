@@ -1,0 +1,789 @@
+<!DOCTYPE htmL>
+<html id = "Beg" onmouseover="showw()" onmouseout="hidee()">
+    <head>
+        <title>
+            The Programming World
+        </title>
+        <meta charset="UTF">
+       
+        <meta name = "viewport" content="width = device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <!-- <link href="fonts/f2/css/all.css" rel="stylesheet" /> -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="icon" href="picon.png" type="image/icon type">
+        <link rel="stylesheet" media="mediatype and|not|only (media feature)" href="mystylesheet.css">
+        <script type="text/JavaScript">
+            // var x = document.getElementById("Body");
+            // // var y = x.getElementsByTagName("P");
+            // console.log(x.length)
+        function petkid() {
+            document.getElementById('mode').style.background = 'black';
+            // document.getElementById('mojo').style.background = 'pink';
+            document.getElementById('mode').style.color = 'white';
+            
+                        
+            var x = document.getElementById("Body");
+            var y = x.getElementsByTagName("P");
+            console.log(y.length)
+            var i;
+            for (i = 0; i < y.length; i++) {y[i].style.color = "White";}
+
+            var v = document.getElementById("Body");
+            var t = v.getElementsByTagName("LI");
+            var j;
+            for (j = 0; j < t.length; j++) {t[j].style.color = "White";
+            }
+            var a = document.getElementById("Body");
+            var b = a.getElementsByTagName("aside");
+            var c;
+            for (c = 0; c < b.length; c++) {b[c].style.color = "White";};
+
+            
+            document.getElementById('fla').style.background = 'rgba(45,34,34,.5)';
+            document.getElementById('giv').style.background = 'white';
+            document.getElementById('fla').style.color = 'rgba(45,34,34,.01)';
+            document.getElementById('mete').style.color = 'white';
+            document.getElementById('mete').style.background = 'transparent';
+            
+           
+            var L =  document.getElementById("Body");
+            var m = L.getElementsByClassName("user");
+            var n;
+
+            for (n = 0 ; n < m.length; n++ ){m[n].style.color = "#ADEFD1FF"};
+            }
+
+            function back() {
+                var Mode =  document.getElementById('mode')
+                var screenSize = window.matchMedia('(max-width: 900px)');
+                if (screenSize){
+                    Mode.style.background = 'rgba(225,225,225,.3)';
+                 }
+                 else{
+                    Mode.style.background = 'white';
+                 }
+            // document.getElementById('mojo').style.background = 'transparent';
+            Mode.style.color = 'rgba(45,34,35,.9)';            
+            var x = document.getElementById("Body");
+           
+            var y = x.getElementsByTagName("P");
+            var i;
+            for (i = 0; i < y.length; i++) {y[i].style.color = "rgba(45,34,35,.9)";}
+        
+            var v = document.getElementById("Body");
+            var t = v.getElementsByTagName("LI");
+            var j;
+            for (j = 0; j < t.length; j++) {t[j].style.color = "rgba(45,34,35,.9)";
+            }
+            var a = document.getElementById("Body");
+            var b = a.getElementsByTagName("aside");
+            var c;
+            for (c = 0; c < b.length; c++) {b[c].style.color = "rgba(45,34,35,.9)";}
+
+    
+            document.getElementById('fla').style.background = 'transparent';
+            document.getElementById('giv').style.background = 'black';
+            document.getElementById('fla').style.color = 'black';
+            document.getElementById('mete').style.background = '#ADEFD1FF';
+            document.getElementById('mete').style.color = '#ADEFD1FF';
+
+            var d = document.getElementById("div");
+            var e = d.getElementsByTagName("LI");
+            var f;
+            for (f = 0; f < e.length; f++) {e[f].style.color = "black";}
+            
+            var L =  document.getElementById("Body");
+            var m = L.getElementsByClassName("user");
+            var n;
+
+            for (n = 0 ; n < m.length; n++ ){m[n].style.color = "rgba(45,34,34,.9)"};
+            }
+            function openBar(){
+                document.getElementById('menu').style.width = '200px';
+                document.getElementById('content').style.marginLeft='200px';
+                document.getElementById('hide').style.visibility = 'hidden';
+            }
+            function closeBar(){
+                document.getElementById('menu').style.width='0px';
+                document.getElementById('content').style.marginLeft='0px';
+                document.getElementById('hide').style.visibility = 'visible';
+            }
+            function showw(){
+                document.querySelector('.reach').style.visibility = 'visible';
+            }
+            function hidee(){
+                document.querySelector('.reach').style.visibility = 'hidden';
+            }
+
+              
+        </script>
+        <style>
+ 
+                .reach .i{transition-duration: 0.30s;
+                          }
+                .reach .im{transition-duration: 0.60s;
+                   }
+                .reach .imm{transition-duration: 0.90s;}
+         
+        </style>
+    </head>
+    
+    
+    <body >
+       
+        <article id="mode">
+    <Nav id = "div">
+       
+        <a href = "index.htm" id="Home"><i class="fa fa-home"  id="hom"></i> Home</a>
+        
+        <a href = " form.htm" ><i class="fa fa-angle-double-up"  id="login"></i> Login</a>
+     
+        <a href = "auth.htm" id = "auth" ><i class="fa fa-user" id="auth" ></i> Author</a>
+    </Nav>
+</div>
+
+<div id="content">
+    <span class="slide"><a href="#" onclick="openBar()"><i class="fa fa-bars" id="hide"></i></a>
+       </span>
+     <div  id="menu" class="nav">
+        <a href="#" class="close" onclick="closeBar()" style="padding: 5px 5px; " ><i class="fa fa-times"></i></a>
+        <a href="index.htm">Home</a>
+        <a href="form.htm">Login</a>
+      
+        <a href="auth.htm">Author</a>
+    </div>
+</div>
+
+       <h1 class = "H1">THE PROGRAMMING WORLD</h1>
+       <img src="pj.JPG" class="pimg">
+    <article id ="Body"  >
+        <ul id = "roll">
+        <li><a href = "#Brief">  Brief History of Programming Languages.</a></li>
+        <li><a href = "#Uses">  Programming languages and its usefulness.</a></li>
+        <li><a href = "#popular"> Ten most popular Programming language.</a></li>
+        <li><a href = "#Key">  Key Words in Programming languages.</a></li>
+        <li><a href=""> The highest paid programmer in the world.</a></li>
+        </ul>
+        <p ><h4 class = "switch">Switch Mode</h4></p>
+       
+        <div id="giv">
+           <div onclick="petkid()" id="mete">O</div>
+           <div id="fla" onclick="back()">O</div>
+        </div>
+        <section id = "Brief">     
+        <div class="capital">    
+         <p>The Programming world is about the history of programming languages briefly, the different types of 
+        programming languages and also the most used programming language presently.   
+        The history of programming languages spans from documentation of early mechanical
+             computers to modern tools for software development. Early programming languages were
+              highly specialized, relying on mathematical notation and similarly obscure syntax.
+               Throughout the 20th century, research in compiler theory lead to the creation of high-level 
+               programming languages, which use a more accessible syntax to communicate instructions.
+
+            The first high-level programming language was<b> Plankalkül, created by Konrad Zuse between 1942 and 
+            1945</b>. The first high-level language to have an associated compiler was created by<b> Corrado Böhm
+             in 1951</b>, for his PhD thesis. The first commercially available language was <b>FORTRAN
+              (FORmula TRANslation)</b>, developed in 1956 (first manual appeared in 1956, but first developed in 1954) by a team led 
+              by John Backus at IBM.
+            </p>
+        
+        <p class = "colo">
+            During 1842–1849, Ada Lovelace translated the memoir of Italian mathematician Luigi 
+            Menabrea about Charles Babbage's newest proposed machine:
+             the Analytical Engine; she supplemented the memoir with notes that 
+            specified in detail a method for calculating Bernoulli numbers with the engine, 
+            recognized by  some historians as the world's first published computer program.
+            The first computer codes were specialized for their applications: e.g., Alonzo Church was 
+            able to express the lambda calculus in a formulaic way and the Turing machine was 
+            an abstraction of the operation of a tape-marking machine.
+
+        To some people, some degree of expressive power and human-readability is required before the 
+        status of "programming language" is granted. Jacquard Looms and Charles Babbage's Difference 
+         Engine both had simple, extremely limited languages for describing the actions that these 
+        machines should perform.
+        </p>
+        <p class = "colo">
+            In 1954, <b>FORTRAN</b> was invented at <b>IBM</b> by a team led by John Backus; it was the first widely used 
+            high-level general purpose programming language to have a functional implementation, as opposed
+             to just a design on paper. When FORTRAN was first introduced, it was viewed with 
+             skepticism due to bugs, delays in development, and the comparative efficiency of "hand-coded" 
+             programs written in assembly. However, in a hardware market that was rapidly evolving; the
+              language eventually became known for its efficiency. It is still a popular language for 
+              high-performance computing and is used for 
+            programs that benchmark and rank the world's fastest supercomputers.
+        </p>
+        <p id = "color">
+            Other languages still in use today include <b>LISP</b> (1958), invented by <b>John McCarthy</b> and <b>COBOL</b>
+             (1959), created by the Short Range Committee. Another milestone in the late 1950s was the 
+             publication, by a committee of American and European computer scientists, of "a new language
+              for algorithms"; the ALGOL 60 Report (the "ALGOrithmic Language"). This report consolidated
+               many ideas circulating at the time and featured three key language innovations:
+        </p>
+    </div>
+    </section>
+    <section id="Uses">
+        <p>Here, some not all programming languages will be discussed </p> 
+            <h1><li>PYTHON</li></h1>
+            <img src="python.png" class="img">
+            
+<h4 >Ease of Learning: Easy to Moderate</h4>
+<h5>Use Cases: General Use and Specialty,Web Applications, Artificial Intelligence</h5>
+<p class="capital">Python is a relatively new interpreted programming language, 
+    first introduced in 1989. It is an interpreted language that supports automatic memory
+     management and object-oriented programming. <b>Python</b> is very popular for general-purpose 
+     programming, including web applications. It has recently become known for specialty use 
+     in artificial intelligence applications. Python jobs are very plentiful, so it’s easy
+      to find a job using Python.
+        </p>
+ <h3>Two key Features of Python</h3>
+        <p><li class="li">The USP of Python is its language design. It is highly productive, elegant, simple, yet 
+            powerful. Python has set the gold standard in terms of developer experience and heavily 
+            influenced modern languages like Go, Julia.
+        </li></p>
+        <p><li class="li">
+            Python has first-class integration with C/C++ and can seamlessly offload the CPU heavy 
+            tasks to C/C++. Also, Python gives powerful toolset for Mathematics, Statistics, and 
+            Computational Science with various libraries like NumPy, Pandas, SciPy, Scikit-Learn. 
+            As a result, Python dominates 
+            the Machine Learning/Deep Learning/Data Science landscape and other 
+            Scientific domain.
+        </li></p>
+        <h1><li>C++</li></h1>
+        <img src="cplus.png" class="img">
+        
+<h4>Ease of Learning: Difficult</h4>
+<h5>Use Cases: General Use, Specialty
+Local Applications,
+Web Services,
+Proprietary Services.</h5>
+<p class="capital">C++ extends C with object-oriented features. The “double-plus” comes from 
+    the increment operator from C. C++ was developed to bring features from older languages
+     to faster, more powerful platforms.
+C++ occupies a similar area in the market as C, 
+including systems programming and low-level hardware development. Over the years, 
+the C++ standard libraries and specification have been expanded considerably, leading
+ to criticism that it has become over-complicated and difficult to learn.
+</p>
+
+<h1><li>JAVASCRIPT</li></h1>
+<img src="javascript.png" class="img">
+<h4>Ease of Learning: Moderate</h4>
+   <h5> Use Cases: General Use,
+    Local Applications,
+    Web Applications.</h5>
+    <p class="capital">JavaScript is a high-level, dynamically typed, interpreted language. It uses Java-like syntax, 
+    hence the name JavaScript. <b>JavaScript</b> was first introduced in the early days of the
+     public Internet, 1995. JavaScript is used to write code that runs in web browsers,
+      on the client side. If you’ve been using the Web long enough to remember the introduction 
+      of Google Maps, you witnessed some of the first magic: the “infinite scrolling” in Maps is done 
+    using JavaScript.
+    
+ Since its first introduction, JavaScript support has been added to all major web browsers.
+  JavaScript frameworks including React, Angular, and Vue offer a Model-View-Controller application
+   development paradigm, running entirely in the browser. JavaScript now supports the visual, 
+   browser-run elements of most modern web applications, which is why most real user monitoring
+    tools cater for JavaScript.
+    </p>  
+<p>JavaScript can also be combined with HTML to make cross-platform mobile applications. 
+    NodeJS is a web server that runs JavaScript on the server side. NodeJS applications 
+    are written entirely in JavaScript.
+    
+    Given all these use cases and support, JavaScript is both popular and in high demand. 
+    It is not very difficult to learn, though there are advanced programming techniques that take
+     time to master. If you are more comfortable with object-oriented languages, consider looking
+      into TypeScript. TypeScript “overlays” object-oriented features and syntax, and transpiles
+       to native JavaScript.</p>
+       <h3>Two Key Features of JavaScript</h3>
+       <p><li class="li">JavaScript is the undisputed king in Browser programming.Today, Web development is
+            dominated mainly by JavaScript based SPA frameworks like React, Vue.js, Angular.</li></p>
+        <p><li class="li">JavaScript has gone through massive modernization and overhaul in the last 
+            several years, especially in 2015, 2016, and later. The major JavaScript releases like ES5, 
+            ES6 has added many modern features, 
+            and JavaScript of today is entirely different from JavaScript of the last decade.</li></p>
+       <h1><li>PHP</li></h1>
+       <img src="php.png" class="img">
+       <h4>Ease of Learning: Easy</h4>
+<h5>Use Cases: General Use,
+Web Applications.</h5>
+<p class="capital">PHP originally stood for “Personal Home Page” as part of its first name, PHP/FI (Forms Interpreter.) 
+The official acronym is now PHP: Hypertext Processor. Its primary role is as a web 
+application server-side scripting system. It was originally developed to extend a CGI 
+program to support.php forms and database access. The code of a PHP program is mixed 
+in with the.phpL, making it similar to Microsoft’s classic (pre-.NET) Active Server 
+Pages. The interpreter reads the L and code, and executes the code portions of the 
+page.
+</p>
+<p><b>PHP</b> is popular because it’s easy to learn. It is also the basis of popular web-based
+ applications such as WordPress and Joomla. However, PHP also has a mixed reputation
+  relating to software quality. Early versions lacked security controls and features
+   that made it difficult to develop highly-secure applications. Recent developments
+    in PHP frameworks and libraries have made improvements in security.
+
+There are plenty of PHP jobs available, for content-focused web applications like WordPress,
+ and proprietary systems developed in PHP.</p>
+ <h3>Two key features of Php</h3>
+ <p><li class="li">PHP is one of the highly productive Server-Side Web development programming 
+     languages. As a result, it is widely used in the industry to develop a 
+     Web application at a rapid pace. The most prominent social networking 
+     Facebook was developed in PHP.</li></p>
+    <p><li class="li">As PHP is used in Web development for the last 35 years,
+         there are many successful and stable PHP frameworks in the market.</li></p>
+
+ <h1><li>RUBY</li></h1>
+    <img src="ruby.png" class="img">
+    <h4>Ease of Learning: Easy to Moderate</h4>
+<h5>Use Cases: General, Web Applications, Scripting.</h5>
+<p class="capital">Ruby is an interpreted, dynamically typed, object-oriented language first introduced 
+in the mid-1990s. It was inspired by several other languages on this list, including Lisp, 
+Perl, and Ada. <b>Ruby</b> is very popular for web application development. The Ruby on Rails 
+framework (now known simply as “Rails”) is a model-view-component server-side framework
+ written in Ruby.
+</p>
+<p>Ruby is fairly easy to learn. Its common use in web applications makes job opportunities easy 
+to find.</p>
+<h3>Three Key Features of Ruby</h3>
+<p><li class="li">Ruby has combined some of the best features of programming languages successfully: dynamic,
+     object-oriented, functional, garbage-collected, and concise.
+    </li></p>
+   <p><li class="li"> Although Ruby itself is not disruptive, its Web development framework Ruby on Rails is
+     probably the most disruptive and influential Server-side Web development framework.
+    </li></p>
+    <p><li class="li">
+    Ruby is used by some of the largest software projects like Twitter, GitHub, Airbnb, 
+    and has excellent tooling and framework support.
+    </li></p>
+
+<h1><li>COBOL</li></h1>
+<img src="cobol.png" class="img">
+<h4>Ease of Learning: Moderate to Difficult</h4>
+<h5>Use Cases: Mainframe Application Development</h5>
+<p class="capital">COBOL is a very old language used primarily for mainframe development. It is somewhat
+ difficult to learn, by comparison with more modern languages.
+
+Programmers that have been using COBOL for decades are enjoying high employability, due to the
+ scarcity of COBOL programmers that are working and not retired. This is not a good reason to 
+ learn it if you don’t already know it, 
+however. Much better to invest in new skills for a new generation of languages and platforms.
+</p>    
+<H1><li>JAVA</li></H1>
+<img src="java.png" class="img">
+<h4>Ease of Learning: Moderate to Difficult</h4>
+<h5>Use Cases: Web applications, Mobile, Embedded systems </h5>
+<p class="capital">Java is the leading general-purpose application development language and framework.
+ It was introduced in 1991 by Sun Microsystems as a high-level, compiled, memory-managed language.
+
+<b>Java’s</b> syntax is similar to C/C++, with curly braces for closures and semicolons to end
+ statements. Automatic memory management is one of the features that made Java so popular,
+  quickly after its initial release. Before Java was introduced, languages that required 
+  manual memory management, such as C and C++, were dominant. Manual memory allocation is 
+  tedious and error-prone, so Java was hailed as a major step forward for application developers.
+</p>
+<p>The promise of Java, beyond memory management, was its cross-platform capability. 
+This was marketed as “write once, run anywhere.” The Java Virtual Machine (JVM) runs 
+Java bytecode, which is compiled from the Java language. JVMs are available for most major
+ operating systems, including Linux, Mac, and Windows. It doesn’t always work perfectly,
+  but when it does, a program written in Java can run on any platform with a compatible JVM.
+
+Java is used for business, web, and mobile applications. It is the native language for 
+Google’s Android OS. Java also powers millions of set-top boxes and embedded devices. 
+Java development skills are highly sought after.
+
+If you’re considering a job in software development, you should strongly consider learning Java.
+</p>
+<h3>Three key features of Java</h3>
+<p><li class="li">Java offers a powerful, feature-rich, multi-paradigm, interpreted programming language with
+     a moderate learning curve and high developer productivity.
+    </li></p>
+     <p ><li class="li" class="img">
+    Java is strictly backward compatible, which is a crucial requirement for business applications.
+     Java has never introduced a major breaking 
+    change like Python or Scala. As a result, it is still the number one choice for enterprises.
+</li></p>
+
+<h1><li>VISUAL BASIC</li></h1>
+<img src="visual-basic.png" class="img">
+<h4>Ease of Learning: Moderate</h4>
+    <h5>Use Cases: Web Applications, Local Applications</h5>
+<p class="capital">Visual Basic.NET (VB.NET) is Microsoft’s implementation of the Visual Basic
+     language that 
+compiles to .NET Intermediate Language. This allows developers to write .NET applications using
+ Visual Basic. Applications written in VB.NET are, more or less, just as capable as any other.
+</p> 
+  <p>However, VB.NET was never very popular for business applications. Application developers 
+preferred C, C++, and C#. Most applications written in VB.NET tend to be older, 
+and are likely to be considered to be “legacy” applications destined for decommission
+ or redevelopment.
+</p>
+<h1><li>C#</li></h1>
+<img src="chh.png" class="img">
+<h4>Ease of Learning: Moderate</h4>
+<h5>Use Cases: Web Applications, Local Applications, Services/Microservices. </h5>
+<p  class="capital">C# was developed and introduced by Microsoft in 2000, along with the overall .NET Framework. 
+Syntactically, C# is very similar to Java and C/C++. It is a compiled, object-oriented language 
+that compiles to .NET Intermediate Language.
+</p>
+<p>
+ Originally, C# was used for Microsoft-focused development of Windows Forms and web development 
+with ASP.NET. The .NET ecosystem has evolved recently with the introduction of the.
+NET Standard and .NET Core. These new frameworks and standards are cross-platform,
+ running on Windows, Linux, and Mac.
+
+<b>C#</b> is popular for local and web application programming, often (but not necessarily) in systems
+ developed primarily based on Microsoft technology. Microsoft’s Xamarin framework allows developers
+  to write Android and iOS applications in C#. It is suitable for systems programming in some cases,
+   and has libraries available for embedded systems.
+</p>
+<h3>Two key Features of C#</h3>
+
+<p><li class="li">
+    
+    Backed by Microsoft and being in the industry for 20 years, C# has large ecosystems of libraries
+     and frameworks.
+    Like Java, C# is also platform independent (thanks to CLR) and runs on Windows, Linux,
+     Mobile devices.
+</p></li>
+     <p><li class="li">
+    <b> Anders Hejlsberg</b> did an excellent job to bring C# out of Java’s shadow and give its 
+     own identity. In terms of developer experience, C# is ahead of Java.
+     The ASP.NET is used for Web Development, especially on Windows.</li></p>
+<h1><li>SQL</li></h1>
+<img src="sql.png" class="img">
+<h4>Ease of Learning: Easy to Moderate</h4>
+<h5>Use Cases: Database Queries</h5>
+<p class="capital">SQL stands for Structured Query Language. <b>SQL</b> is used to query and modify data in a Relational 
+Database Management System (RDBMS.) Vendor-specific implementations, such as PL/SQL (Oracle)
+ and T-SQL (Microsoft) offer product-specific features.
+</p>
+<p>
+SQL isn’t a general purpose language that can be used to write applications. However, it is at 
+least a useful, if not required skill of most developers. The term “full-stack developer”
+ refers to a developer with a well-rounded skill set that includes all aspects of an application. 
+ This almost always includes accessing and saving data to a database. SQL is not hard to learn 
+ initially, though there are advanced use cases in Big Data and data analysis that require
+  significant experience.
+</p>
+<p>  SQL is very popular with both developers and Database Administrators, so jobs that require SQL 
+skills are plentiful. However, it is not a complete skill unto itself. SQL experience is a big
+ plus on a resume, but it is rarely the primary skill required for any given job.
+</p>
+
+</section>
+<section class="relative" id="popular">
+    <p>These are the most Popular Programming Languages.</p>
+    <h2 class="Popular">
+        <li class="li">Python</li>
+        <li class="li">Java</li>
+        <li class="li">JavaScript</li>
+        <li class="li">C#</li>
+        <li class="li">Php</li>
+        <li class="li">C/C++</li>
+        <li class="li">R</li>
+        <li class="li">Objective-C</li>
+        <li class="li">Swift</li>
+        <li class="li">Kotlin</li>
+    </h2>
+        <p>NOTE: JavaScript is the most USED, because of its efficiency.</p>
+        <div>
+        <aside class="meter">
+            <p class="li"><i>The Percentages at which they are Popular</i></p>
+            <meter style="width:30%;" min="0" max = "100" value = "100" > 100 of 100</meter> Python (100%) <br> 
+            <meter style="width:30%" min="0" max = "100" value = "90" > 90 of 100</meter> Java (90%) <br>
+            <meter style="width:30%" min="0" max = "100" value = "80" > 80 of 100</meter> JavaScript (80%) <br>
+            <meter style="width:30%" min="0" max = "100" value = "70" > 70 of 100</meter> C# (70%) <br>
+            <meter style="width:30%" min="0" max = "100" value = "60" > 60 of 100</meter> Php (60%) <br>
+            <meter style="width:30%" min="0" max = "100" value = "50" > 50 of 100</meter> C/C++ (50%) <br>
+            <meter style="width:30%" min="0" max = "100" value = "40" > 40 of 100</meter> R (40%) <br>
+            <meter style="width:30%" min="0" max = "100" value = "30" > 30 of 100</meter> Objective-C (30%) <br>
+            <meter style="width:30%" min="0" max = "100" value = "20" > 20 of 100</meter> Swift (20%) <br>
+            <meter style="width:30%" min="0" max = "100" value = "10" > 10 of 100</meter> Kotlin (10%) <br>
+        </aside>
+    </div>
+    
+    
+</section>
+<section id="Key">
+    <h4>Key Words in Programming languages</h4>
+    <p>
+    In programming, a keyword is a word that is reserved by a program because the 
+     has a special meaning. Keywords can be commands or parameters. Every programming language has a 
+    set of keywords that cannot be used as variable names. Keywords are sometimes 
+    called reserved names .
+</p>
+<ol>
+    <dl><h3><li>Conditionals</li></h3></dl>
+<dd><p>Conditionals, conditional statements, and conditional expressions are features of 
+programming language, which help the code make a choice and result in either TRUE or FALSE. 
+These perform different actions depending on the need of the programmer, and multiple
+ conditions can be combined into a single condition, as long as the final value of the condition is either TRUE or FALSE.  Examples of conditional statements are ‘IF’, ‘IF-Else’, ‘While’ and ‘Else-If’.
+</p>
+</dd>
+
+ <dl><h3><li>Constants</li></h3></dl>
+ <dd>
+    <p>A constant (also known as Const) is a term used to describe a value that does not
+ change throughout the execution of the program, unlike a variable. Constant cannot be altered 
+ and will remain fixed, and a constant can be a number, character, and string.
+</p>
+</dd>
+
+ <dl><h3><li>Data types</li></h3></dl>
+ <dd>
+<p>A data type is the classification of a particular type of data. We as humans can understand the 
+difference between a name and a number, but the computer cannot. The computer uses special internal 
+codes to distinguish between different types of data it receives and processes. The most common data
+ types include integer type which are numbers, a floating-point number data type which are decimal
+  based numbers, Boolean values which are TRUE or FALSE and character data type which is alphabets.
+</p>
+</dd>
+
+<dl><h3><li>Array</li></h3></dl> 
+<dd><p>Arrays are lists or groups of similar types of data values that are grouped. All values in the
+ array are of the same data type and are only differentiated by their position in the array. For 
+ example, the age of all students in a class can be an array as they will all be numbers. Similarly,
+  the name of every student in a class will be an array as they will all be of the character data type.
+</p></dd>
+
+<dl><h3><li>Declaration</li></h3></dl> 
+<dd><p>
+A statement that describes a variable, function or any other identifier is called a declaration.
+ A declaration helps the compiler or interpreter identify the word and understand its meaning,
+  and how the process should be continued. Even though they are important, they are optional and
+   may be used depending on the nature of the programming language.
+</p></dd>
+<dl><h3><li>Exception</li></h3></dl> 
+<dd><p>
+A special, unexpected and anomalous condition encountered during the execution of a program is
+ known as an exception. It can also be termed as an error or a condition that alters the way of
+  the program or the microprocessor to a different path. An example of an exception can be the
+   case when a program tries to load a file from the disk, but the file does not exist. 
+   The exceptions must be handled and eradicated in the program code to avoid any fatal error.
+</p></dd>
+<dl><h3><li> Expression</li></h3></dl>
+<dd><p>
+An expression is a legal grouping of letters, symbols, and numbers being used to represent 
+the value of one or more variables. Expressions are highly used in a number of programming 
+languages and many other programs, with each having its own set of legal and illegal expressions. 
+Every expression contains one or more operands (objects being manipulated) and operators 
+(symbols representing actions). For example, in the expression A+B-C, A, B and C are operands 
+while + and – are operators.
+</p></dd>
+<dl><h3><li> Framework</li></h3></dl>
+<dd><p>
+Framework in programming is a foundation with a specified level of complexity that may be altered
+ by the programmer, making use of their code. A framework might include different software libraries,
+  APIs, compilers and much more. In simpler terms, a framework provides a favorable environment for 
+  a certain type and level of programming for a project. A framework allows the developers to bypass
+   the general necessities and focus on more project-related specifics.
+</p></dd>
+
+<dl><h3><li> Hardcode </li></h3></dl>
+<dd><p>
+In computer programming, the term hard code or hardcode is used to describe code that is not 
+likely to change. Hardcoded features are built into hardware or software in such a way so that they
+ cannot be modified later on. For example, if font size 10 is hardcoded in the software, 
+ then it might not change for a long time.
+</p></dd>
+
+
+<dl><h3><li> Loop</li></h3></dl>
+<dd><p>
+A loop is a sequence of instructions that repeat the same process over and over until a 
+condition is met and it receives the order to stop. In a loop, the program asks a question, 
+and if the answer directs the program to perform an action, the action is performed, and the
+ loop runs again, performing the same task. It runs until the answer is such that no action is 
+ required and the code can proceed further. Loops are considered one of the most basic and 
+ powerful concepts in programming.
+</p></dd>
+
+<dl><h3><li> Endless loop</li></h3></dl>
+<dd><p>
+    An endless loop or infinite loop is a continuous repetition of a program snippet, which is 
+    everlasting. This occurs majorly due to conditional operators and functions which redirect the
+     code back to the snippet, making it endless.
+</p></dd>
+
+
+
+<dl><h3><li> Iteration</li></h3></dl>
+<dd><p>
+Iteration is a single pass through a set of operations that deal with code. One form of iteration 
+in computer programming is via loops. A loop will repeat a certain segment of code until a condition 
+is met and it can proceed further. Each time the computer runs a loop, it is known as an iteration.
+ In simple terms, iteration is the process to repeat a particular snippet of code over and over 
+ again to perform a certain action.
+</p></dd>
+
+
+<dl><h3><li> Keywords</li></h3></dl>
+<dd><p>
+Words that are reserved by a programming language or a program as they have special meaning are 
+known as keywords. These keywords are reserved to perform certain tasks, and they can be either
+ commands or parameters. Each programming language has a set of reserved keywords
+  (also known as reserved names) which cannot be used as variable names. Some keywords in ‘C’ 
+  language are ‘return’, ‘while’, ‘if’, ‘static’, ‘continue’ and ‘default’.
+</p></dd>
+
+
+
+<dl><h3><li> Null </li></h3></dl>
+<dd><p>
+Null defines the lack of any value whatsoever. A null character is a programming code, 
+which represents a character with no value, missing value or the end of a character string.
+ If we state $val1= ”” and $val2= “1”, $val1 has a null value.
+</p></dd>
+
+
+<dl><h3><li> Operand </li></h3></dl>
+<dd><p>
+An operand is a term used to denote the objects which can be manipulated using different operators.
+ In the expression ‘A+F+Q’, ‘A’, ‘F’ and ‘Q’ are operands.
+</p></dd>
+
+<dl><h3><li> Operator </li></h3></dl>
+<dd><p>
+An operator is a term used to denote the object which can manipulate different operands. In 
+the expression ‘A+F-Q’, ‘+’ and ‘-‘are operators. Examples of different operators are + (addition),
+ -- (decrement), = (equals), != (not equal) and >= (greater than or equal to).
+</p></dd>
+
+<dl><h3><li>Variable</li></h3></dl>
+<dd><p>
+A variable is a location that stores temporary data within a program which can be modified, 
+store and display whenever need. For example, if we have an integer variable with a name XYZ and 
+it stores a value 10. If the variable is again initiated with a different value, it will store the
+ new value. So if XYZ=9 is implemented, the variable location of XYZ will discard the value 10 
+ and store the new value, which is 9.
+</p></dd>
+
+<dl><h3><li> Pointer </li></h3></dl>
+<dd><p>
+In programming, a pointer is a variable that contains the address of a location in the memory. 
+The location is the commencing point of an object, such as an element of the array or an integer. 
+Using pointers improves the performance of the program as it is cheaper in time and space to 
+copy and dereference pointers than to copy and access the data to which the pointer is referring.
+</p></dd>
+
+<dl><h3><li> High-level language </li></h3></dl>
+<dd><p>
+A high-level language (HLL) is a programming language that lets the developer write programs 
+irrespective of the nature or type of computer. But if a computer has to understand a high-level
+ language, it should be compiled into a machine language. HLLs are considered high-level because
+  they are in close proximity to human languages and further from machine languages. High-level
+   languages include BASIC, C, C++, Pascal, Prolog, and FORTRAN.
+</p></dd>
+
+<dl><h3><li> Low-level language </li></h3></dl>
+<dd><p>
+A low-level language is a language that is very close to machine language and provides a 
+little abstraction of programming concepts. Low-level languages are closer to the hardware than 
+human languages. The most common examples of low-level languages are assembly and machine code.
+</p></dd>
+
+<dl><h3><li> Machine language </li></h3></dl>
+<dd><p>
+Also known as machine code, machine language is a lowest-level programming language consisting
+ of binary digits or bits that are read by computers. Machine language is the only language 
+ understood by computers. As it consists of only numbers, they cannot be comprehended by humans. 
+ Therefore, programmers write code in the high-level language, which is then translated into 
+ assembly language or machine language by a compiler, which is then converted to a machine language 
+ by an assembler.
+</p></dd>
+
+
+<dl><h3><li> Markup language </li></h3></dl>
+<dd><p>
+A markup language is a relatively simple language that consists of easily understood keywords and 
+tags, used to format the overall view of the page and its contents. The language specifies codes
+ for formatting the layout and style of a page, within a text file only. The most common markup
+  languages are Hypertext Markup Language .phpL), Extensible Markup Language (XML) and Standard
+   Generalized Markup Language (SGML).
+</p></dd>
+
+<dl><h3><li> Package </li></h3></dl>
+<dd><p>
+A package is an organized module of related interfaces and classes. Packages are used to organize 
+classes that belong to the same category or provide related functionality.
+</p></dd>
+
+
+<dl><h3><li> Runtime </li></h3></dl>
+<dd><p>
+Runtime or runtime is the time period during which a program is, in fact, running on a computer. 
+If an operation occurs at ‘runtime’, it occurred when a program is running or the moment at which 
+the program begins to run. Also known as execution time, the runtime is part of the life cycle of
+ the program, and it denotes the time between when the program begins running and until it is closed 
+ by the OS or the user.
+</p></dd>
+<dl><h3><li> Backend </li></h3></dl>
+<dd><p>
+Backend is another term used for background in programming. A backend task is the one that is 
+performed in the background with the user’s direct interaction. Similarly, a backend developer is 
+a person who designs programs that process data and perform tasks that users don’t directly see.
+</p></dd>
+
+<dl><h3><li> Front-end </li></h3></dl>
+<dd><p>
+The Front-end is the user interface of a computer or any device. For example, any operating system
+ provides users with the ease of navigation. A program or OS is considered good if the UI or 
+ Front-end is easy to use and seamless to navigate. Front-end developers are the programmers who
+  design and develop the user interface of a device.
+</p></dd>
+
+<dl><h3><li> Server-side </li></h3></dl>
+<dd><p>
+When procedures and processes are performed on the server, they are deemed server-side. On the other
+ hand, the client-side is at the end of the user. Many programming languages are designed for
+  server-side programmings such as PHP, Perl, and ASP. With the internet boom, almost all websites
+   make use of both server-side and client-side processing. An excellent example of a server-side
+    script is a search engine.
+</p></dd>
+
+<dl><h3><li> Source data </li></h3></dl>
+<dd><p>
+Source data or data source is the key location from which data is used in the program. 
+The source data can come from a database, spreadsheet or even a hard-coded data location. 
+When a program is executed to display data in a table, the program retrieves the data from 
+its source and then presents it in the arrangement as defined in the code.
+</p></dd>
+
+<dl><h3><li> Statement </li></h3></dl>
+<dd><P>
+In programming, a statement is a single line of code written legally in a programming language
+ that expresses an action to be carried out. A statement might have internal components of its own,
+  including expressions, operators and functions. An example of a statement is <b>A = A + 5. </b> A program 
+  is nothing but a sequence of one or multiple statements. Learn more about statements here.
+</P></dd>
+
+<dl><h3><li> Syntax </li></h3></dl>
+<dd><p>
+Similar to human languages, programming languages have their own set of rules on how statements 
+can be conveyed. The set of these rules is known as syntax. While a number of programming languages 
+share many features, functions, and capabilities, they differ in syntax. Without the proper use of
+ the syntax, one cannot write an executable program, and a wrong syntax will lead to a plethora of
+  errors.
+</p></dd>
+
+<dl><h3><li> Token </li></h3></dl>
+<dd><p>
+A token is the smallest individual unit in a program, often referring to a portion of a much larger 
+data piece. For example, if a person’s name is John Thomas Wood, it can be broken into tokens; ‘John’, 
+‘Thomas’ and ‘Wood’. The programmer can then go on to use only the portion or token they wish to. 
+Tokens are classified into keywords, identifiers, literals, operators, and punctuators.
+</p></dd>
+</ol>
+</section>    </article>
+
+<div class="reach">
+    <a href = "https://web.facebook.com/peter.olatunji.568/" target="_blank" ><img src="face3.png"  class="i"></a>
+    <a href="http://twitter.com/DevPeter5" target="_blank"><img src="twit.png" class="im" > </a>
+    <a href="https://wa.me/2348133527728" target="_blank"><img src="wat.png" class="imm"> </a>
+    </div>
+</article>
+   
+    
+    <footer>
+        <div> Copyright &copy<script>document.write(new Date().getFullYear()) </script> All Rights 
+            Reserved Developed with <i class="fa fa-heart"></i> by <a href = "auth.htm"><i>DevPeter</i></a> </div> 
+      </footer>
+    </body>
+<html>

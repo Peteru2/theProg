@@ -1,0 +1,302 @@
+<!Doctype htmL>
+<html>
+    <head>
+        <title>
+            Question and Answer.
+        </title>
+        <meta charset="UTF - 8">
+        <meta name = "viewport" content="width = device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <!-- <link href="fonts/f2/css/all.css" rel="stylesheet" /> -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="icon" href="picon.png" type="image/icon type">
+       <style>
+         body{overflow-x: hidden;}
+         #div #Q {
+                    border-left: 4px solid #ADEFD1FF;
+                    padding-left: 5%; 
+                    padding-right: 4.5%;  }
+         #div #Home{
+                    padding-left: 5.8%;
+                    padding-right: 5%;
+                    border: none;
+                    }
+          #div #QA{
+                      padding-right: 7%;
+                    }
+    
+              input[type = "button"]{ width: 15%;
+            padding: 2.5%;
+            border-radius: 9%;
+            background: #ADEFD1FF ;
+            color: black;
+            outline: none;
+            font-weight: bolder;
+            border: none;
+            box-shadow: 2px 5px 30px #c6c8da 
+            }
+            input[type = "button"]:hover{
+              background:rgba(45,34,34,.5) ;
+            }
+            .H1 {
+                    font-size: 170%;
+                    font-weight: bold;
+               }
+            .input{width: 60%;
+                  padding-bottom: 2%;
+                  background-color: #ADEFD1FF ;
+                  outline: none;
+                  color:black;
+                  box-shadow: 2px 5px 25px  rgba(45,34,34,.5) ; 
+                }
+                
+            input:focus{
+                        background:rgba(45,34,34,.5) ;
+                        color:white;
+                }
+                .reach .i{transition-duration: 0.30s;
+                  }
+                .reach .im{transition-duration: 0.30s;
+                 }
+                .reach .imm{transition-duration: 0.30s;}
+              footer{
+                        position: relative;
+                      top: 600px;
+        }
+              
+              @media only screen and (max-width:480px){
+                  .calc{display:none
+                    }
+                  .H1 {
+                    font-size: 110%;
+                    font-weight: bold;
+               }
+                  }
+                  </style>
+    </head>
+    <body onmouseover="document.querySelector('.reach').style.visibility = 'visible'" ;
+      onmouseout="document.querySelector('.reach').style.visibility = 'hidden'";
+     >
+      
+    <Nav id = "div">
+      <a href = "index.htm" id="Home" ><i class="fa fa-home"  id="hom"></i> Home</a>
+        
+      <a href = " form.htm" ><i class="fa fa-angle-double-up"  id="login"></i> Login</a>
+      
+   <!--   <a href ="QandA.htm" id = "Q" ><i class="fa fa-question" id="QA"></i> Q&A</a>
+      -->
+      <a href = "auth.htm"  ><i class="fa fa-user" id="auth" ></i> Author</a>
+      </Nav>
+    
+      <article >
+        <h1 class="H1" id = "qBrief" >Here are some simple questions for you, answer them correctly. <b>GOODLUCK!!!</b></h1>
+       
+      <div id="note" style="color: red"><b>NOTE:</b> The moment the <b>Start</b> button is clicked your time starts to count</div>
+        
+      <p id="count"></p>
+      <button onclick="load()" id="lef">Start My Quiz</button>
+      <div id = "error"></div>
+      <form id ="quiz" name= "quiz">
+        
+     <ol id = "li" id="hit">
+      <li>What is the name of the capital of Oyo State.</li>
+      <input type ="Text" name = question1 id = "textbox">
+
+      <li>What is the name of the capital of Jos</li>
+      <input type = "Radio" id = "mx"  name = "question2" value = "Plateau">Plateau<br >
+      <input type = "Radio" id = "mx"  name = "question2" value = "Ibadan">Ibadan<br >
+      <input type = "Radio" id = "mx"  name = "question2" value = "Ibope">Ibope<br >
+
+      <li>What is the name capital of Newyork </li>
+      <input type = "Radio" id = "mx"  name = "question3" value = "google">Google<br >
+      <input type = "Radio" id = "mx" value = "Albany" name = "question3">Albany<br >
+      <input type = "Radio" id = "mx" value = "All benny" name = "question3"> All benny<br >
+
+      <li>Is HTML a Programming language</li>
+      <input type = "Radio" id = "mx"  name = "question4" value = "Yes">Yes<br >
+      <input type = "Radio" id = "mx"  name = "question4" value = "No">No<br >
+      <input type = "Radio" id = "mx"  name = "question4" value = "None of the above">None of the above<br >
+    
+      <li>The Full of meaning <i>CSS</i></li>
+      <input type = "Radio" id = "mx"  name = "question5" value = "Cascading Style Sheet">Cascading Style Sheet<br >
+       <input type = "Radio" id = "mx"  name = "question5" value = "Cascading Styles Sheet">Cascading Styles Sheet<br >
+       <input type = "Radio" id = "mx"  name = "question5" value = "Caplouge Script State">Caplouge Script State<br >   
+
+       <li>Which is not a datatype in JavaScript</li>
+       <input type = "Radio" id = "mx"  name = "question6" value = "Boolean">Boolean<br >
+        <input type = "Radio" id = "mx"  name = "question6" value = "Turple">Turple<br >
+        <input type = "Radio" id = "mx"  name = "question6" value = "String">String<br > 
+
+        <li >In JavaScript, what would be the outcome of this instructions </li>
+        <pre > var jet = "Keyword"  <br>
+         
+    this.jet = "Array"
+
+     console.log(jet)
+        </pre>
+        <input type = "Radio" id = "mx"  name = "question7" value = "Error">Error<br >
+      <input type = "Radio" id = "mx" value = "Array" name = "question7">Array<br >
+      <input type = "Radio" id = "mx" value = "Keyword" name = "question7">Keyword<br >
+
+      <li>What is the output of &nbsp;X </li>
+      <pre>function <b>Teft()</b>{ </pre>
+      <pre>var x = <b>"First code";</b></pre>
+      <pre>}</pre>
+      <pre>var x = <b>"Float";</b></pre>
+      <pre>console.log(<b>x</b>)</pre>
+      <input type = "Radio" id = "mx"  name = "question8" value = "First code">First code<br >
+      <input type = "Radio" id = "mx"  name = "question8" value = "none">none<br >
+      <input type = "Radio" id = "mx"  name = "question8" value = "Float">Float<br >   
+      
+       
+      <li>Who invented JavaScript</li>
+      <input type = "Radio" id = "mx"  name = "question9" value = "Brendan Eich">Brendan Eich<br >
+       <input type = "Radio" id = "mx"  name = "question9" value = "Mitchell Baker">Mitchell Baker<br >
+       <input type = "Radio" id = "mx"  name = "question9" value = "John Resig">John Resig<br >  
+
+       <li> What would be the output of this y</li>
+       <pre>y = "Apple" < "Mango"</pre>
+       <pre>console.log(y)</pre>
+    <input type = "Radio" id = "mx"  name = "question10" value = "False">False<br >
+     <input type = "Radio" id = "mx"  name = "question10" value = "True">True<br >
+     <input type = "Radio" id = "mx"  name = "question10" value = "Undefined">Undefined<br >
+
+
+     <li>What is the official name of  JavaScript</li>
+     <input type = "Radio" id = "mx"  name = "question11" value = "JavaScript">JavaScript<br >
+      <input type = "Radio" id = "mx"  name = "question11" value = "TypeScript">TypeScript<br >
+      <input type = "Radio" id = "mx"  name = "question11" value = "ECMAScript">ECMAScript<br >  
+
+      <li>What is the correct Keyword in JavaScript</li>
+      <input type = "Radio" id = "mx"  name = "question12" value = "Alert">Alert<br >
+       <input type = "Radio" id = "mx"  name = "question12" value = "function">function<br >
+       <input type = "Radio" id = "mx"  name = "question12" value = "Remove">Remove<br >  
+       <input type = "Radio" id = "mx"  name = "question12" value = "All of the above">All of the above<br >  
+
+       <li>The full meaning of DOM is</li>
+       <input type = "Radio" id = "mx"  name = "question13" value = "Document Object Macbook">Document Object Macbook<br >
+        <input type = "Radio" id = "mx"  name = "question13" value = "Document Oriented Markup">Document Oriented Markup<br >
+        <input type = "Radio" id = "mx"  name = "question13" value = "Document Object Model">Document Object Model<br >  
+       
+        <li>The Square of 9</li>
+        <input type = "Radio" id = "mx"  name = "question14" value = "49">49<br >
+        <input type = "Radio" id = "mx"  name = "question14" value = "81">81<br >
+        <input type = "Radio" id = "mx"  name = "question14" value = "90">90<br >
+     
+        <li> Solve this => &nbsp; 7 + 5 x 4 - 5(2 - 45) </li>
+        <input type = "Radio" id = "mx"  name = "question15" value = "490">490<br >
+        <input type = "Radio" id = "mx"  name = "question15" value = "188">188<br >
+        <input type = "Radio" id = "mx"  name = "question15" value = "242">242<br >
+        
+        <li>When was JavaScript Introduced</li>
+        <input type = "Radio" id = "mx"  name = "question16" value = "1992">1992<br >
+        <input type = "Radio" id = "mx"  name = "question16" value = "1985">1985<br >
+        <input type = "Radio" id = "mx"  name = "question16" value = "1995">1995<br >
+        
+        <li> The First commercially available language was?</li>
+        <input type = "Radio" id = "mx"  name = "question17" value = "SQL">SQL<br >
+         <input type = "Radio" id = "mx"  name = "question17" value = "FORTRAN">FORTRAN<br >
+         <input type = "Radio" id = "mx"  name = "question17" value = "JavaScript">JavaScript<br > 
+
+         <li> Which of these is not a key word in programming languages</li>
+         <input type = "Radio" id = "mx"  name = "question18" value = "Syntax">Syntax<br >
+          <input type = "Radio" id = "mx"  name = "question18" value = "UI/UX">UI/UX<br >
+          <input type = "Radio" id = "mx"  name = "question18" value = "Constant">Constant<br >  
+       
+       
+         <li>Which of these is not a framework in Javascript</li>
+         <input type = "Radio" id = "mx"  name = "question19" value = "NodeJS">NodeJS<br >
+          <input type = "Radio" id = "mx"  name = "question19" value = "">Backbone<br >
+          <input type = "Radio" id = "mx"  name = "question19" value = "laravel">Laravel<br >  
+      
+
+        <li> One of the first name of PHP is </li>
+        <input type = "Radio" id = "mx"  name = "question20" value = "Personal Home Page">Personal Home Page<br >
+        <input type = "Radio" id = "mx"  name = "question20" value = "Hypertext Processor">Hypertext Processor<br >
+        <input type = "Radio" id = "mx"  name = "question20" value = "Professional Hypertext program ">Professional Hypertext program<br >
+        
+     
+           <input href= "#Brief" type ="button" id = "button" value = "I'm done" onClick = "Check()" > 
+        
+      </ol>  
+      </form>
+
+      <div id = "after-submit">
+      
+        <p id = "message"></p>
+        <p id = "number-correct"></p>
+        <img id = "pics">  
+     
+        
+      </div>
+      <p class="opt">
+        <span class="reload" ></span>
+        <span class="log_out"></span>
+      </p>
+
+      <button id="anna" >
+        
+      </button>
+      <div id = "incor" >
+
+      </div>
+     
+      </article>
+     
+        <div id="content">
+          <span class="slide"><a href="#" onclick="openBar()"><i class="fa fa-bars" id="hide"></i></a>
+           </span>
+           <div  id="menu" class="nav">
+              <a href="#" class="close" onclick="closeBar()" style="padding: 5px 5px; " ><i class="fa fa-times"></i></a>
+              <a href="index.htm">Home</a>
+            <a href="form.htm">Login</a>
+          <!--  <a href="QandA.htm">Q&A</a> -->
+            <a href="auth.htm">Author</a>
+          </div>
+        </div>  
+        <div class="reach">
+        <a href = "https://web.facebook.com/peter.olatunji.568/" target="_blank" ><img src="face3.png"  class="i"></a>
+        <a href="http://twitter.com/DevPeter5" target="_blank"><img src="twit.png" class="im" > </a>
+        <a href="https://wa.me/2348133527728" target="_blank"><img src="wat.png" class="imm"> </a>
+        </div>
+        <script src="Pword.js"></script>
+
+        
+
+    <script type="text/javascript">
+      function disp(n1)
+      {
+          Calc.txt1.value= Calc.txt1.value+n1
+      }
+      
+      
+  </script>
+ <!-- 08162662557 leye Driver -->
+<form name = "Calc" class = "calc">
+      <input type="text"  class="input" name="txt1" style="text-align: right;"><br><br>
+      <input type = "button" value = 9 name="btn9" onclick="disp(btn9.value)">
+      <input type = "button" value = 8 name="btn8" onclick="disp(btn8.value)">
+      <input type = "button" value = 7 name="btn7" onclick="disp(btn7.value)">
+      <input type = "button" value = + name="addbtn" onclick="disp(addbtn.value)"><br>
+      <input type = "button" value = 6 name="btn6" onclick="disp(btn6.value)">
+      <input type = "button" value = 5 name="btn5" onclick="disp(btn5.value)">
+      <input type = "button" value = 4 name="btn4" onclick="disp(btn4.value)">
+      <input type = "button" value = - name="subbtn" onclick="disp(subbtn.value)"><br>
+      <input type = "button" value = 3 name="btn3" onclick="disp(btn3.value)">
+      <input type = "button" value = 2 name="btn2" onclick="disp(btn2.value)">
+      <input type = "button" value = 1 name="btn1" onclick="disp(btn1.value)">
+      <input type = "button" value = * name="btnmul" onclick="disp(btnmul.value)"><br>
+      <input type = "button" value = 0 name="btn0" onclick="disp(btn0.value)">
+      <input type = "button" value =. name="decbtn" onclick="disp(decbtn.value)">
+      <input type = "button" value =/ name="divbtn" onclick="disp(divbtn.value)">
+      
+<input type = "button" value = "=" name="equbtn" onclick="txt1.value = eval(txt1.value)" style="background:#0d1137 ; color: white;"><br>
+  </form>
+  <footer class = "foot">
+          <div> Copyright &copy<script>document.write(new Date().getFullYear()) </script> All Rights 
+              Reserved Developed with <i class="fa fa-heart"></i> by<a href="auth.htm"><i> DevPeter</i> </a></div> 
+        </footer>
+
+        <script src="QandA.js"></script>
+        </body>
+<html>

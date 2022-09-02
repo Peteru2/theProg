@@ -1,0 +1,141 @@
+<!Doctype html>
+<html>
+    <head>
+   
+        <title>Login</title>
+        <meta name = "viewport" content="width = device-width, initial-scale=1.0">
+        <meta charset="UTF -8">
+        <!-- <link href="fonts/f2/css/all.css" rel="stylesheet" /-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="icon" href="picon.png" type="image/icon type">
+
+        <style>
+           html{margin: 0;
+                 padding: 0;
+            }
+        body{background:url(ddd.jpg) ;
+                           background-size:cover;
+                        height:100%}
+     form{background:rgba(248, 241, 241, 0.3);
+            width: 50%;
+            margin: 5% auto;
+            max-width: 100%;
+            padding: 8% 2% 8% 3%;
+            border-radius: 3%;
+    }
+        .td{
+            outline: none;
+            display:block;
+            padding: 5px;
+                        height: 35px;
+                        border-radius: 25px;
+                        color: black;
+                        background: white;
+                        border: 1px solid #5cb; 
+                        width: 140%;
+        }
+    td{display: block;}
+        ::-webkit-input-placeholder{color: black;   
+        
+        }
+        :-moz-placeholder{color: white;}
+        :-ms-input-placeholder{color: white;}
+        .sub{
+            border: none;
+            }
+    
+        .sub input{
+            border-radius: 50%;
+            color: white;
+            background: rgba(45,34,34,.5);
+            border: 2px solid pink;
+            padding: 4%;
+            width: 40%;
+            outline: none
+            }
+    
+    h2 p{margin: 0 auto;
+        color:rgb(221, 187, 187)}
+    .center{
+           
+          position: relative;
+          top: 20%;
+          left: 20%;
+        }
+    
+     @media only screen and (min-width: 481px) and (max-width: 769px) {
+        form{background:rgba(248, 241, 241, 0.3);
+            width: 50%;
+            margin: 5% auto;
+            max-width: 100%;
+            padding: 4%;
+            border-radius: 3%;}
+            .center{
+           
+           position: relative;
+           top: 20%;
+           left: 10%;
+         }
+            .td{
+            outline: none;
+            display:block;
+            padding: 5px;
+            height: 35px;
+            border-radius: 25px;
+            color: black;
+            background: white;
+            border: 1px solid #5cb; 
+            width: 120%;
+        }
+         
+     }   
+     @media only screen  and (max-width: 480px) {
+        form {width: 90%;
+            margin: 28% auto;}
+        body{background-size:cover;}
+        .center{
+            left: 5%;
+        }
+            
+     .td{
+            outline: none;
+            display:block;
+            padding: 5px;
+            display: flex;
+            height: 35px;
+            border-radius: 25px;
+            color: black;
+            margin-bottom: 10%;
+            background: white;
+            border: 1px solid #5cb; 
+            width: 130%;
+        }
+        }
+                </style>
+       </head>
+      
+     
+    <body>
+        <article >   
+                 
+        <form id="my-form" name = "form">
+            <div class = "center">
+            <h2><p>Login here</p></h2>
+            <table>
+                <div id="umsg"></div>
+                <td ><input type="text" placeholder="Username" id="Uname" autofocus  required class="td"></td>
+                
+                <td ><input type="Password" placeholder="Password" id="Uemail"  required class="td"> </td>
+    
+                
+            
+              <td class="sub" > <input type="button" name= "btn" value="Submit" class="btn" >   </td>
+            
+            </table>
+        </div>
+        </form>
+        </article>       
+        
+        <script src="Log.js"></script>
+        </body>
+<html>

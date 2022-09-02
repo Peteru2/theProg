@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            The Author
+        </title>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width = device-width, initial-scale=1.0">
+        <!-- <link href="fonts/f2/css/all.css" rel="stylesheet" /> -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="icon" href="picon.png" type="image/icon type">
+
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <script type="text/JavaScript">
+      function openBar(){
+          document.getElementById('menu').style.width= '200px';
+          document.getElementById('content').style.marginLeft='200px'
+          document.getElementById('hide').style.visibility = 'hidden'
+      }
+      function closeBar(){
+          document.getElementById('menu').style.width='0px'
+          document.getElementById('content').style.marginLeft='0px'
+          document.getElementById('hide').style.visibility = 'visible'
+      }
+  </script>
+    <style>
+          body{font-family:sans-serif;}
+
+      #div #aut {border-left: 4px solid #ADEFD1FF;
+                padding-left: 5%; 
+                 padding-right: 4.5%;}
+         #div #Home{
+                    padding-left: 5.8%;
+                    padding-right: 5%;
+                    border: none;
+                    }
+                    #div #QA{
+                      padding-right: 7%;
+                    }
+        
+        .reach .i{transition-duration: 0.30s;
+          }
+                .reach .im{transition-duration: 0.30s;
+                  }
+                .reach .imm{transition-duration: 0.30s;
+                }  
+      
+       /* @media only screen and (max-width:480px){
+         footer{font-size:100%}
+        
+       } */
+    </style>
+
+  <script>
+   /* function aka(e){
+      top = e.dataset.akabaTop
+      alert("aka " + top)
+    }
+    function fire(e){
+    type = e.dataset.missileType;
+    mission = e.dataset.missileMission;
+    time = e.dataset.missileTime;
+    alert("Sending over the " + type + " to " + mission + " " + time )
+  } */
+  </script>
+<body onmouseover="document.querySelector('.reach').style.visibility = 'visible'" 
+onmouseout="document.querySelector('.reach').style.visibility = 'hidden'">
+      <Nav id = "div">
+
+        <a href = "index.htm" id="Home" ><i class="fa fa-home"  id="hom"></i> Home</a>
+        
+      <a href = " form.htm" ><i class="fa fa-angle-double-up"  id="login"></i> Login</a>
+      
+     <!-- <a href ="QandA.htm" id = "Q" ><i class="fa fa-question" id="QA"></i> Q&A</a>
+      -->
+      <a href = "auth.htm" id="aut" ><i class="fa fa-user" id="auth" ></i> Author</a>
+      
+      </Nav>
+      <div id="content">
+        <span class="slide"><a href="#" onclick="openBar()"><i class="fa fa-bars" id="hide"></i></a>
+         </span>
+         <div  id="menu" class="nav">
+            <a href="#" class="close" onclick="closeBar()" style="padding: 5px 5px; " ><i class="fa fa-times"></i></a>
+            <a href="index.htm">Home</a>
+            <a href="form.htm">Login</a>
+         <!--  <a href="QandA.htm">Q&A</a> -->
+            <a href="auth.htm">Author</a>
+        </div>
+      </div>
+      <h1 class="H1">The Author </h1>
+ <article id ="Body">
+   <section>
+    <div class="work">
+   
+        <img src = "Peteru.jpg" width = "35%" class = "pics">
+        
+   <div class="sector">
+      <h5><a href = "" target = "_blank" ><strong>IG:</b> @peteru__u</a><br>
+      <a href = "" target = "_blank" ><b>Twitter:</b>  @DevPeter5</a><br>
+      <a href = "" target = "_blank"><b> P.No:</b>  08133527728</a>
+      </h5>
+    </div>
+    </div>
+
+  <p>Hi all, I am <b>Olatunji Peter Olalekan</b> also known as DevPeter.
+  I am a self taught developer, who is willing to build and delevop scale-able and well responsive web applications. The good news is, I love to code, and I speak different languages, which are:  </p> 
+  <li class="auth-bio">Talk of Front-end:</li>  
+     <div class="auth-bio-info">
+    
+      <div>Html.</div>
+      <div>Css.</div>
+      <div>Bootstrap.</div>
+      <div>Javascript.</div>
+      <div> Search Engine Optimization(SEO).</div>
+      <div> Git (Collaboration).</div>
+      <div>Github.</div>
+      <div>Netlify.</div>
+      <div>Jquery.</div>
+
+
+
+      
+    </div>
+     
+    <li class="auth-bio">Talk of back-end:</li>  
+    <div class="auth-bio-info">
+      <div>PHP</div>
+    </div>
+
+    <li class="auth-bio">Talk of Database:</li>  
+    <div class="auth-bio-info">
+      <div>MySql</div>
+    </div>
+
+<div>
+   </section>   
+   <section>
+     <p class="soc-p">
+       Social Links 
+     </p>
+     <div class="soc-links">
+     <a href = "https://web.facebook.com/peter.olatunji.568/"  title="Facebook" target="_blank"> <i class="fab fa-facebook-square" hidden = "true"></i></a>
+     <a href="https://twitter.com/DevPeter5"  title="Twitter" target="_blank" ><i class="fab fa-twitter" ></i> </a>
+     <a href="https://wa.me/2348133527728" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i> </a>
+     <a href="mailto:polalekan526@gmail.com"  title="Email me" target="_blank"><i class="fa fa-envelope-square"></i> </a>
+     <a href="https://www.linkedin.com/in/peter-olalekan-5ab9841bb" title="linkedin" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i> </a>
+    </div>
+    </section>   
+
+   <div class="reach">
+    <a href = "https://web.facebook.com/peter.olatunji.568/" target="_blank"><img src="face3.png"  class="i"></a>
+    <a href="http://twitter.com/DevPeter5" target="_blank" ><img src="twit.png" class="im" > </a>
+    <a href="https://wa.me/2348133527728" target="_blank"><img src="wat.png" class="imm"> </a>
+    </div>
+     
+</article>
+       
+
+       
+      
+       
+       <footer>
+        <div>Copyright &copy<script>document.write(new Date().getFullYear()) </script> All Rights 
+            Reserved Developed with <i class="fa fa-heart"></i> by <a href = "auth.htm"><i>DevPeter</i></a> </div> 
+      </footer>
+    </body>
+  <html>

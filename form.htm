@@ -1,0 +1,615 @@
+<!DOCTYPE htmll>
+<html onmouseover="document.querySelector('.reach').style.visibility = 'visible'" 
+onmouseout="document.querySelector('.reach').style.visibility = 'hidden'";>
+<head>
+    
+<title>Fill your form</title>
+<!-- <link href="fonts/f2/css/all.css" rel="stylesheet" /> -->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="icon" href="picon.png" type="image/icon type">
+
+<meta charset = "UTF-8">
+<meta name = "viewport" content="width = device-width, initial-scale=1.0">    
+    <script type="text/JavaScript">
+    
+        function openBar(){
+            document.getElementById('menu').style.width= '200px';
+            document.getElementById('content').style.marginLeft='200px'
+            document.getElementById('hide').style.visibility = 'hidden'
+        }
+        function closeBar(){
+            document.getElementById('menu').style.width='0px'
+            document.getElementById('content').style.marginLeft='0px'
+            document.getElementById('hide').style.visibility = 'visible'
+            
+        }
+        
+    </script>
+
+    <style>
+       .html{
+  margin: 0;
+  padding: 0;  
+}
+body{
+  margin: 0; 
+ font-family:sans-serif;
+}
+
+#div{
+  float:left;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 22%;
+  margin-right:2%;
+  background-color: rgba(45,34,34,.5);
+  height: 100%;
+  background: -webkit-linear-gradient(left,rgba(45,34,34,.5) 0%, rgb(173, 239, 209) 100% );
+  background: -moz-linear-gradient(left,rgba(45,34,34,.5) 0%, rgb(173, 239, 209) 100% );
+  background: -o-linear-gradient(left,rgba(45,34,34,.5) 0%, rgb(173, 239, 209) 100% );
+  background: linear-gradient(left,rgba(45,34,34,.5) 0%, rgb(173, 239, 209) 100% );
+  margin-right: 0%;
+  }
+  .p{color:pink}
+  #p{color:brown}
+  #div i {padding: 0% 7% 0% 0%;}
+  #div #hom{padding-right:  5% ;}
+  #div #QA{padding-right:  7% ;
+           }
+  .QA{padding:0% 8% 0% 0%; ;}
+  #div #login{padding-left: 0%;}
+  #div a{padding: 5%;
+    width:89%;
+    padding-left:7%;
+    padding-right: 4%;
+        font-size: 120%;
+    font-family: Arial, Helvetica, sans-serif;   
+    display: block;
+    font-weight: bolder;
+    list-style-type: none;
+    margin-bottom: 2%;
+    color:black;
+    text-decoration: none;
+      }
+  #div a:hover{background:rgba(45,34,34,.5);
+              color: white;  
+  }
+  
+  .error{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 110%;
+    color:red
+  }
+  .H1
+  {
+    margin-top: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 190%;   
+    background: rgb(173, 239, 209) ;
+    border-left: 1px solid rgba(45,34,34,.5);
+    color:rgba(45,34,35,.8);
+    margin-left: 22%;
+    top: 20%;
+    left:0;
+    
+  }
+  .user{
+      color:#0d1137;
+      font-weight: bold;
+      font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+  }
+  #div #log {border-left: 4px solid rgb(173, 239, 209);
+                    padding-right: 2%;}
+        body{background:White;
+              }
+    td{font-size: 120%;}
+      
+        .tip {background: rgb(173, 239, 209);
+            border:2px solid #d1bbbb;
+            margin:  auto;
+            width: 470px;
+            margin-left: 16%;
+            border-radius: 15px;
+            -webkit-animation: table 30s infinite alternate;
+            -moz-animation: table 30s infinite alternate;
+            -o-animation: table 30s infinite alternate;
+            animation: table 30s infinite alternate;
+            }
+        table {  background: rgb(173, 239, 209);
+                Margin:0 auto;
+                width:80%;
+                -webkit-animation: table 30s infinite alternate;
+                -moz-animation: table 30s infinite alternate;
+                -o-animation: table 30s infinite alternate;
+                animation: table 30s infinite alternate;    
+            }
+        table tr {-webkit-animation: color 30s infinite alternate;
+            -moz-animation: color 30s infinite alternate;
+            -o-animation: color 30s infinite alternate;
+            animation: color 30s infinite alternate;
+        }
+        form{ padding-top: 2.6%;
+           }
+        .tr input {
+            border:none;
+            padding: 5px;
+               border-radius: 5px;
+               border-bottom: 1px solid red;
+               margin-left: 5%;
+               background: rgb(173, 239, 209);
+               -webkit-transition: background-color 1s ease;
+               -moz-transition: background-color 1s ease;
+               -o-transition: background-color 1s ease;
+               transition: background-color 1s ease;
+               width:100%
+               }
+  
+ 
+        select { margin-left: 5%;
+                 border:none;
+                 padding: 5px;
+               border-radius: 5px;
+                  width: 20%;
+                  /* border-bottom: 1px solid red; */
+                  background: rgb(173, 239, 209);
+                  border-bottom: 1px solid red;
+                 
+                  } 
+        
+        .radio input{margin-left: 5%;
+                    width: 10%}
+        :-moz-submit-{border-radius: 10px;
+                            margin-left: 20%}
+        .top input {border:none;
+               border-bottom: 1px solid red;
+               width: 67%;
+               margin-left: 5%;
+               background: rgb(173, 239, 209);
+            border-radius: 3%;
+            }
+        input:hover, select:hover{box-shadow: lightcoral 1px 1px 4px;
+                                  transform:scaleX(1.04);  
+                                    }
+
+        img#index  {border-radius: 20px;
+                    margin-left: 41%;
+                    margin-bottom: 2%;
+        }
+        .submit input{border-radius: 20px;
+                      background:pink;
+                    font-size:medium;
+                font-weight: bold;}
+        input:focus, textarea:focus{
+            background-color: #d1bbbb;
+            color: white;
+            
+            }
+         .main {width:100%; 
+               height:100%;
+           }
+    .rep{
+               border:none;
+               border-bottom: 1px solid red;
+               margin-left:5%;
+               padding: 5px;
+               border-radius: 5px;
+               width: 100%;
+               background: rgb(173, 239, 209);
+               
+               }
+    input{margin-bottom: 6%;}
+    #p{
+   margin-top: 0;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 190%;   
+   margin-left: 22%;
+   background: rgb(173, 239, 209) ;
+   border-left: 1px solid rgba(45,34,34,.5);
+   color:rgba(45,34,35,.8)
+
+  }
+  footer{clear:both;
+   text-align: center;
+    background:rgb(173, 239, 209);
+    padding: 1%;
+    font-weight: bolder;
+    font-size: larger;
+    color:rgba(45,34,34,.7);
+    max-width: size 100%;
+    position: absolute;
+    margin-top: 240px;
+    width: 98%;
+}
+    .reach{
+        position: fixed;
+        left:94%;
+        top:34%;
+        
+    }
+
+.reach img{display: block;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  border-radius: 20px;
+  -webkit-transition: all 3s ease;
+  -moz-transition: all 3s ease;
+  -o-transition: all 3s ease;
+  transition: all 3s ease;
+}
+
+.reach img:hover {
+                      margin-left: 20%;
+                }
+ .nav{
+  height: 100%;
+  width:0% ;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(173, 239, 209);
+  overflow-x: auto;
+  padding-top: 30px;
+  transition: 0.7s;
+  background: -webkit-linear-gradient(left,rgb(45,34,34) 0%, rgb(173, 239, 209) 100% );
+}
+.nav a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color:black;
+  font-size: 65%;
+  font-family: Arial, Helvetica, sans-serif; 
+  font-weight: bold;
+  
+}
+.nav .close{
+  position:absolute;
+  top: 0;
+  left:84%
+}
+.nav .close:hover{color:pink;
+                background:#0d1137 ;}
+.slide a {font-size: 30px;
+        color:rgb(201, 92, 110) }
+        #content{padding-left: 5px;
+       transition: margin-left 0.7s;
+       position: fixed;
+       top: 0;
+       left: 0;
+       float: left;
+       padding-right: 100%;
+      visibility:hidden ;
+      font-size: 200%;
+    background-color: rgba(45,34,35,.8);
+  }
+.nav a:hover{background: rgba(45,34,34,.5);
+            color: white;}
+.reach .i{transition-duration: 0.30s;
+    }
+.reach .im{transition-duration: 0.60s;
+    }
+.reach .imm{transition-duration: 0.90s;}
+
+    @keyframes table {
+        0%{background-color:lightblue}
+        25% {background-color:rgb(173, 239, 209);}
+        50% {background-color: rgb(45,34,34);}
+        75% {background-color: white}
+        100% {background-color: #d1bbbb}
+        }
+
+    @-webkit-keyframes table {
+        0%{background-color:lightblue}
+        25% {background-color:rgb(173, 239, 209);}
+        50% {background-color: rgb(45,34,34);}
+        75% {background-color: white}
+        100% {background-color: #d1bbbb}
+        }
+        
+        @-moz-keyframes table {
+            0%{background-color:lightblue}
+        25% {background-color:rgb(173, 239, 209);}
+        50% {background-color: rgb(45,34,34);}
+        75% {background-color: white}
+        100% {background-color: #d1bbbb}
+        }
+        @-o-keyframes table {
+            0%{background-color:lightblue}
+        25% {background-color:rgb(173, 239, 209);}
+        50% {background-color: rgb(45,34,34);}
+        75% {background-color: white;}
+        100% {background-color: #d1bbbb}
+        }
+        
+    @keyframes color {
+        0% {color: black}
+        25%{color: black}
+        50%{color: white}
+        75%{color: black}
+        100%{color: black}
+        }
+        @-webkit-keyframes color {
+        0% {color: black}
+        25%{color: black}
+        50%{color: white}
+        75%{color: black}
+        100%{color: black}
+        }
+   
+        @-Moz-keyframes color {
+            0% {color: black}
+        25%{color: black}
+        50%{color: white}
+        75%{color: black}
+        100%{color: black}
+        }
+        @-o-keyframes color {
+            0% {color: black}
+        25%{color: black}
+        50%{color: white}
+        75%{color: black}
+        100%{color: black}
+        }
+#Body  {
+    margin-left: 24%;
+    font-size:130%;
+    margin-top: 0;
+    padding-top:0;
+    margin-right: 1%;}
+    .al_ac{text-align: center;
+        font-size: 100%;
+        }
+.al_ac a{color:pink
+}
+    
+
+    /* Media queries */
+   /*Mobile*/
+    @media only screen and (max-width:480px){
+nav{
+    font-size:80%
+  }
+  .reach img:hover{margin-left: 0px;
+                  margin-top: 6%;}   
+#div ul li {transition-duration: 0s;}
+#div a {transition-duration: 0s;}
+#div i {transition-duration: 0s;}
+.tip{margin-left: 0%;
+    width: 95%;
+    padding:10px 0px}
+input{width: 80px;}
+#div{visibility: hidden;
+    
+}
+.al_ac{text-align: center;
+        font-size: 82%;
+        }
+.al_ac a{color:pink
+}
+footer{margin-left: 0;
+        position: absolute;
+        top:60%;
+        left:0;
+        font-size:100%;
+      }
+.gend{font-size: 80%;
+      font-weight: bold;    
+    }
+.H1{margin-left: 0;
+    font-size: 120%;
+    margin-top:30px;
+    text-align:center;
+    }
+#my-form{margin:0px}
+#content{visibility:visible;}
+#Body{margin-left: 5%;}
+#p{margin-left: 0;}
+.reach img {width: 11%;
+float: left;
+transition-duration: 0s;
+
+}
+.reach{
+  position: fixed;
+  left:3%;
+  top: 88%;
+  transition-duration: 0s;
+background: transparent;
+z-index: 1;}
+
+
+  a {color:black;
+    text-decoration: none
+    }
+    .create{
+            /* margin-left: 10%; */
+            text-align:center;
+            margin-bottom: 0px}
+}
+/* Tablet */
+@media only screen and (min-width:481px) and (max-width:900px){
+nav{
+    font-size:80%
+  }
+  .reach img:hover{margin-left: 0px;
+                  margin-top: 6%;}   
+  .create{margin-left: 10%}
+#div ul li {transition-duration: 0s;}
+#div a {transition-duration: 0s;}
+#div i {transition-duration: 0s;}
+.tip{margin-left: 15%;
+    margin-top:0%;
+    padding-top:0px;
+    width: 70%;}
+input{width: 80px;}
+#div{visibility: hidden;
+    
+}
+footer{margin-left: 0;
+        position: absolute;
+        top:60%;
+        left:0;
+      }
+.gend{font-size: medium;
+      font-weight: bold;    
+    }
+.H1{margin-left: 0;
+    font-size: 140%;
+    margin-top:30px;;
+    }
+#content{visibility:visible;}
+#Body{margin-left: 5%;}
+#p{margin-left: 0;}
+.reach img {width: 14%;
+float: left;
+transition-duration: 0s;
+}
+.reach{
+  position: fixed;
+  left:3%;
+  top:85%;
+  transition-duration: 0s;
+background: transparent;}
+
+  }
+  a {color:black;
+    text-decoration: none
+    }
+    .al_ac{text-align: center;
+        font-size: 90%;
+        }
+.al_ac a{color:pink
+}
+               
+    </style>
+  
+    
+  
+        
+    </head>
+<body >
+    <h1 class="H1">Fill the FORM correctly and generate your Password!</h1>
+    <Nav id = "div">
+
+        <a href = "index.htm" id="Home" ><i class="fa fa-home"  id="hom"></i> Home</a>
+        
+        <a href = " form.htm" id="log"><i class="fa fa-angle-double-up"  id="login"></i> Login</a>
+        
+     <!--   <a href ="QandA.htm" id = "Q" ><i class="fa fa-question" id="QA"></i> Q&A</a>
+        -->
+        <a href = "auth.htm" id="aut" ><i class="fa fa-user" id="auth" ></i> Author</a>
+      </Nav>
+
+  
+  <article id="Body"> 
+  <Form id = "my-form" name="form" >
+  <div id="msg"></div>
+      <div class="tip">
+  <table  >
+      <img src="index.png" width="20%" id="index" >
+          <tr>
+                 
+              <td >
+                  Username:
+              </td> 
+              <td>
+                 <input type="text" class="rep" placeholder="User Name" id="name" autofocus>              </td>
+          </tr>
+         <!-- <tr class="tr">
+              <td>
+                  Password:
+              </td>
+              <td>
+                  <input type="password" placeholder="Password" name="password" id="password" required>
+              </td>
+          </tr>
+         <tr class="tr">
+              <td>
+                  School:
+              </td>
+              <td>
+                  <Input type="text" placeholder="School Name" school="" required >
+              </td>
+          </tr>
+          --> 
+          <tr class="radio">
+              <td>
+                  Gender:
+              </td>
+              <td class="gend" name = "gendd">
+                  <input type="radio" name="gender" id="gender" > Male
+                  <input type="radio" name="gender" id="gender" > Female
+              </td>
+          </tr>
+          <tr class="tr">
+              <td>
+                  Email:
+              </td>
+              <td>
+                  <Input type="email" placeholder="Email" name="Email" id="email"   >
+              </td>
+          </tr>
+
+          <tr >
+              <td>
+                  Country:
+              </td>
+              <td>
+                  <select style = "width:100%;"   id="nation" name="Nation">
+                      <option>---</option>
+                      <option>SOUTH AFRICA</option>
+                      <option>FRANCE</option>
+                      <option>NIGERIA</option>
+                      <option>GHANA</option>
+                      <option>ENGLAND</option>
+                      <option>ANGOLA</option>
+                      <option>CAMEROON</option>
+                      <option>PORTUGAL</option>
+                      <option>ITALY</option>
+                      <option>SPAIN</option>
+                  </select>
+              </td>
+          </tr>
+         
+          <tr class="submit" >
+              <td >
+                  <input type="submit" id="btn"  value="Submit"  >
+              </td>
+          </tr>
+          
+      </table>
+      
+    </div>
+    <div  class ="al_ac">Already have an account <a href="Log.htm" style="text-decoration: underline;"> Login</a></div>
+  </Form>
+  <ul id="users"></ul>
+</article>
+
+<div class="reach">
+    <a href = "https://web.facebook.com/peter.olatunji.568/" target="_blank" ><img src="face3.png"  class="i"></a>
+    <a href="https://twitter.com/DevPeter5" target="_blank"><img src="twit.png" class="im" > </a>
+    <a href="https://wa.me/2348133527728" target="_blank"><img src="wat.png" class="imm"> </a>
+    </div>
+    <div id="content">
+        <span class="slide"><a href="#" onclick="openBar()"><i class="fa fa-bars" id="hide"></i></a>
+         </span>
+         <div  id="menu" class="nav">
+            <a href="#" class="close" onclick="closeBar()" style="padding: 5px 5px; " ><i class="fa fa-times"></i></a>
+            <a href="index.htm">Home</a>
+            <a href="form.htm">Login</a>
+           <!-- <a href="QandA.htm">Q&A</a>-->
+            <a href="auth.htm">Author</a>
+        </div>
+        </div>
+        <footer>
+            <div> Copyright &copy<script>document.write(new Date().getFullYear()) </script> All Rights 
+                Reserved Developed with <i class="fa fa-heart"></i> by<a href="auth.htm"><i> DevPeter</i> </a></div> 
+          </footer>
+
+        <script src="Pword.js"></script>
+</body>
+<html>
